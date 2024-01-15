@@ -10,26 +10,50 @@ export type SidebarItem = {
 
 export const SIDEBAR: Array<SidebarItem> = [
   {
-    title: 'Getting Started',
+    title: "Getting Started",
     children: [
       {
-        title: 'Overview',
-        slug: '/docs',
+        title: "Overview",
+        slug: "/docs",
       },
       {
-        title: 'Introduction',
-        slug: '/docs/intro',
+        title: "Introduction",
+        slug: "/docs/intro",
       },
       {
-        title: 'Getting Started Tutorial',
-        slug: '/docs/getting-started',
+        title: "Getting Started Tutorial",
+        slug: "/docs/getting-started",
       },
     ],
   },
   {
-    title: 'API Intergration',
+    title: "Bulk SMS Intergration",
     children: [
-      
+      {
+        title: "Introduction",
+        slug: "/docs/bulk-sms-api",
+      },
+      {
+        title: "Delivery Codes",
+        slug: "/docs/delivery-codes-and-descriptions",
+      },
+    ],
+  },
+  {
+    title: "Short Code Intergration",
+    children: [
+      {
+        title: "ShortCodes API",
+        slug: "/docs/short-code-api",
+      },
+      {
+        title: "Purchase and Pricing",
+        slug: "/docs/purchasing-credit",
+      },
+      {
+        title: "Subscription API",
+        slug: "/docs/subscription-api",
+      },
     ],
   },
 ];

@@ -1,29 +1,29 @@
-import { NextRequest } from 'next/server';
-import { ImageResponse } from '@vercel/og';
+import { NextRequest } from "next/server";
+import { ImageResponse } from "@vercel/og";
 
 export const config = {
-  runtime: 'experimental-edge',
+  runtime: "experimental-edge",
 };
 
 export default function handler(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);
 
-    const hasTitle = searchParams.has('title');
-    const hasDescription = searchParams.has('description');
+    const hasTitle = searchParams.has("title");
+    const hasDescription = searchParams.has("description");
 
     const title = hasTitle
-      ? searchParams.get('title')?.slice(0, 100)
-      : 'Overview';
+      ? searchParams.get("title")?.slice(0, 100)
+      : "Overview";
     const description = hasDescription
-      ? searchParams.get('description')?.slice(0, 100)
-      : 'All you need to start documenting your project...';
+      ? searchParams.get("description")?.slice(0, 100)
+      : "Tilil Technologies documentation for APIS and different systems intergrations...";
 
     return new ImageResponse(
       (
         <div tw="relative w-full h-full flex flex-col justify-center bg-white">
           <div tw="flex flex-col px-24">
-            <h1 tw="text-4xl text-slate-900 mb-10">Galaxy template</h1>
+            <h1 tw="text-4xl text-slate-900 mb-10">Tilil Documentation</h1>
             <span tw="bg-blue-50 px-2 py-1 rounded text-sm text-blue-600">
               {title}
             </span>

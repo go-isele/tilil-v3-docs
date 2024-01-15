@@ -1,17 +1,17 @@
-import '@fontsource/inter/variable.css';
-import '@/styles/main.css';
+import "@fontsource/inter/variable.css";
+import "@/styles/main.css";
 
-import React from 'react';
-import Head from 'next/head';
-import type { AppProps } from 'next/app';
+import React from "react";
+import Head from "next/head";
+import type { AppProps } from "next/app";
 
-import type { MarkdocNextJsPageProps } from '@markdoc/next.js';
+import type { MarkdocNextJsPageProps } from "@markdoc/next.js";
 
-import { ThemeProvider } from 'next-themes';
+import { ThemeProvider } from "next-themes";
 
-import { SkipToContent } from '@/components/skip-to-content';
-import { Header } from '@/components/header';
-import { LayoutDocs } from '@/layouts/docs';
+import { SkipToContent } from "@/components/skip-to-content";
+import { Header } from "@/components/header";
+import { LayoutDocs } from "@/layouts/docs";
 
 interface MyAppProps extends AppProps {
   pageProps: MarkdocNextJsPageProps;
@@ -20,16 +20,16 @@ interface MyAppProps extends AppProps {
 function MyApp(props: MyAppProps) {
   let { Component, pageProps, router } = props;
 
-  let isDocs = router.asPath.startsWith('/docs');
+  let isDocs = router.asPath.startsWith("/docs");
 
   let TITLE = pageProps.markdoc?.frontmatter.title;
   let DESCRIPTION = pageProps.markdoc?.frontmatter.description;
-  let SITE = 'https://' + process.env.VERCEL_URL;
+  let SITE = "https://" + process.env.VERCEL_URL;
 
   return (
     <React.Fragment>
       <Head>
-        <title>{`${TITLE} - Tilil API Docs`}</title>
+        <title>{`${TITLE} -Tilil API Docs`}</title>
 
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -55,7 +55,7 @@ function MyApp(props: MyAppProps) {
         <meta
           property="og:image"
           content={`${
-            process.env.VERCEL_URL ? SITE : ''
+            process.env.VERCEL_URL ? SITE : ""
           }/api/og?title=${encodeURIComponent(
             TITLE
           )}&description=${encodeURIComponent(DESCRIPTION)}`}

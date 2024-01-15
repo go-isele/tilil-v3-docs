@@ -4,8 +4,8 @@
     "next/core-web-vitals",
     "plugin:@next/next/recommended"
   ],
-  "plugins": ["prettier"],
-  "rules": {
-    "prettier/prettier": "error"
-  }
+  "plugins": []
+  //  "rules": {
+  //    "prettier/prettier": "error"
+  //  }
 }

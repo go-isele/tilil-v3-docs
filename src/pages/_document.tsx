@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript } from 'next/document';
+import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
@@ -8,7 +8,7 @@ export default function Document() {
         className="
           bg-gradient-to-r
 
-        dark:from-blue-900/10
+        dark:from-blue-900/25
         dark:via-purple-800/10
         dark:to-blue-600/10
         "

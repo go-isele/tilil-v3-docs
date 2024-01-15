@@ -1,14 +1,12 @@
 ---
-title: Getting Started
+title: Section 1 - Bulk SMS
 ---
 
-# Bulk Messaging
+- Tilil Technologies bulk SMS endpoint [https://api.tililtech.com/sms/v3/sendsms](https://api.tililtech.com/sms/v3/sendsms)
 
-- New bulk SMS endpoint [https://api.tililtech.com/sms/v3/sendsms](https://api.tililtech.com/sms/v3/sendsms)
+## Sending a Message
 
-# Sending a Message
-
-Below is sample send sms JSON data:
+Below is a sample sendsms JSON data:
 
 ```json
 {
@@ -21,7 +19,7 @@ Below is sample send sms JSON data:
 }
 ```
 
-# Where:
+Where:
 
 | Variable        | Type   | Description                                        | Example Value                          |
 | --------------- | ------ | -------------------------------------------------- | -------------------------------------- |
@@ -96,22 +94,3 @@ Below is sample send sms JSON data:
 | 1009        | Unsupported data type              |
 | 1010        | Unsupported request type           |
 | 1011        | Invalid user state                 |
-
-## Getting Delivery Reports:
-
-1. **Offline (Pulling – Not recommended)**
-
-   This is a pull method where a client requests a delivery report from the system by specifying a message id in the request. The URL below will return a delivery report for message id 288369252.
-
-- [https://api.tililtech.com/sms/v3/getdlr?api_key=%3cAPI_KEY%3e&messageId=38610706](https://api.tililtech.com/sms/v3/getdlr?api_key=%3cAPI_KEY%3e&messageId=38610706)
-- Where 288369252 is the message_id returned in sendsms request.
-
-```
-
-Key changes:
-
-1. Fixed the formatting of the sendsms JSON data.
-2. Ensured proper escaping of characters in the URL.
-3. Corrected the formatting of the closing triple backticks for the code block.
-
-```

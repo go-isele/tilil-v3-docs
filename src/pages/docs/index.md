@@ -1,11 +1,19 @@
 ---
-title: Bulk SMS Documentation
-description: Learn how to integrate Bulk SMS functionality into your applications.
+title: Tilil Documentation
+description: Tilil Technologies official guide on how to integrate Bulk SMS functionality into your systems and applications.
 ---
 
 # Overview
 
-Welcome to the Bulk SMS Documentation! This guide will help you understand how to integrate our Bulk SMS service into your applications.
+This document provides a quick step-by-step guide on how to send bulk and premium messages
+using an application interface (API). It has been made simple to enable a quick integration into
+our bulk messaging services.
+A more descriptive guide can be found at [https://tililtech.com](https://tililtech.com).
+To note is that **Tilil Technologies** is always developing its systems to suit every client’s needs
+and also to achieve the best data integrity as possible.
+We also customize the APIs to every client’s request. So, if you need SOAP, XML, Direct
+database insertion or the bulk messaging system installed in your datacenter or in your intranet,
+talk to us.
 
 ## How It Works
 
@@ -18,20 +26,21 @@ Our Bulk SMS service allows you to send a large volume of text messages to multi
 
 ## API Integration
 
-### Authentication
+### SMS API Endpoints
 
 To authenticate your requests, include your API key in the HTTP headers. Here's an example using cURL:
 
-```
+```bash
 curl -X POST \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -d "recipient=PHONE_NUMBER" \
   -d "message=Your message content" \
-  https://api.bulksms.com/send
- ```
+  https://api.tililtech.com/sms/v3/sendsms
+```
 
 ### Sample Request
-```
+
+```http request
 POST /send HTTP/1.1
 Host: api.bulksms.com
 Content-Type: application/json
