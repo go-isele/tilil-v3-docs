@@ -43,23 +43,23 @@ export const SIDEBAR: Array<SidebarItem> = [
       },
     ],
   },
-  // {
-  //   title: "Short Code Intergration",
-  //   children: [
-  //     {
-  //       title: "ShortCodes API",
-  //       slug: "/docs/short-code-api",
-  //     },
-  //     {
-  //       title: "Purchase and Pricing",
-  //       slug: "/docs/user-guide",
-  //     },
-  //     {
-  //       title: "Subscription API",
-  //       slug: "/docs/subscription-api",
-  //     },
-  //   ],
-  // },
+  {
+    title: "Short Code Intergration",
+    children: [
+      {
+        title: "ShortCodes API",
+        slug: "/docs/short-code-api",
+      },
+      {
+        title: "Purchase and Pricing",
+        slug: "/docs/user-guide",
+      },
+      {
+        title: "Subscription API",
+        slug: "/docs/subscription-api",
+      },
+    ],
+  },
   {
     title: "User Guide Manual",
     children: [
