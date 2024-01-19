@@ -4,6 +4,17 @@ title: Section 1 - Bulk SMS
 
 - Tilil Technologies bulk SMS endpoint [https://api.tililtech.com/sms/v3/sendsms](https://api.tililtech.com/sms/v3/sendsms)
 
+## Preamble
+
+This document provides a quick step by step guide on how to send bulk and premium messages
+using an application interface (API). It has been made simple to enable a quick integration into
+our bulk messaging services. A more descriptive guide can be found at http://tililtech.com.
+To note is that Tilil Technologies is always developing its systems to suit every client’s needs
+and also to achieve the best data integrity as possible.
+We also customize the APIs to every client’s request. So, if you need SOAP, XML, Direct
+database insertion or the bulk messaging system installed in your datacenter or in your intranet
+talk to us
+
 ## Sending a Message
 
 Below is a sample sendsms JSON data:

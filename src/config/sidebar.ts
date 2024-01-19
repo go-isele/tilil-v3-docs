@@ -37,22 +37,35 @@ export const SIDEBAR: Array<SidebarItem> = [
         title: "Delivery Codes",
         slug: "/docs/delivery-codes-and-descriptions",
       },
+      {
+        title: "Messaging API Guide",
+        slug: "/docs/messaging-api-guide",
+      },
     ],
   },
+  // {
+  //   title: "Short Code Intergration",
+  //   children: [
+  //     {
+  //       title: "ShortCodes API",
+  //       slug: "/docs/short-code-api",
+  //     },
+  //     {
+  //       title: "Purchase and Pricing",
+  //       slug: "/docs/user-guide",
+  //     },
+  //     {
+  //       title: "Subscription API",
+  //       slug: "/docs/subscription-api",
+  //     },
+  //   ],
+  // },
   {
-    title: "Short Code Intergration",
+    title: "User Guide Manual",
     children: [
       {
-        title: "ShortCodes API",
-        slug: "/docs/short-code-api",
-      },
-      {
-        title: "Purchase and Pricing",
-        slug: "/docs/purchasing-credit",
-      },
-      {
-        title: "Subscription API",
-        slug: "/docs/subscription-api",
+        title: "Bulk SMS Manual",
+        slug: "/docs/user-guide",
       },
     ],
   },
