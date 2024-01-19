@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "react-app",
+    "next/core-web-vitals",
+    "plugin:@next/next/recommended"
+  ],
+  "plugins": []
+  //  "rules": {
+  //    "prettier/prettier": "error"
+  //  }
+}
