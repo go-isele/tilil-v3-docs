@@ -1,13 +1,6 @@
-# Tilil Technologies Limited
-
-**Address:** Raphta Heights, Raphta Road - Westlands  
-**Phone:** +254 792 777888, +254 708 400000  
-**Email:** [support@tililtech.com](mailto:support@tililtech.com)
-
-## Tilil Technologies Team
-- Date: 18/01/2023
-- Website: [tililtech.com](http://tililtech.com)
-- Alternate Website: [tililtechnologies.co.ke](http://tililtechnologies.co.ke)
+---
+title: Messaging API Guide
+---
 
 ## Quick SMS API Guide
 
