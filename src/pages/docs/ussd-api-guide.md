@@ -1,9 +1,8 @@
-
-
 # USSD API Documentation
 
 ## Introduction
 
+This document provides information on how to use the USSD API provided by [Your Company/Service]. The USSD API allows you to interact with our service using USSD codes.
 
 ## Endpoint
 
@@ -106,5 +105,3 @@ axios.get(url, { params })
 
 Make sure to install the required libraries (requests for Python and axios for Node.js) using the respective package managers before running the code.
 ```
-
-Feel free to use this Markdown code in your documentation.
