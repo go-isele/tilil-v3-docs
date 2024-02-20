@@ -43,6 +43,16 @@ export const SIDEBAR: Array<SidebarItem> = [
       },
     ],
   },
+    {
+    title: "USSD Intergration",
+    children: [
+      {
+        title: "Integration Guide",
+        slug: "/docs/ussd-api-guide",
+      },
+      
+    ],
+  },
   {
     title: "Short Code Intergration",
     children: [
