@@ -104,4 +104,3 @@ axios.get(url, { params })
 ```
 
 Make sure to install the required libraries (requests for Python and axios for Node.js) using the respective package managers before running the code.
-```
