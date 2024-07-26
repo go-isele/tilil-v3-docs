@@ -1,7 +1,6 @@
 ---
 title: USSD API Guide
 ---
-# USSD API Documentation
 
 ## Introduction
 
