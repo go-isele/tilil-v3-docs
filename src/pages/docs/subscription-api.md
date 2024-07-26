@@ -1,7 +1,7 @@
 ---
 
 ## title: Subscription API
-
+---
 This service is invoked by a client to activate or deactivate a customer on a certain service.
 
 Endpoint: [https://api.tililsms.com/sms/v3/subscribermanage](https://api.tililsms.com/sms/v3/subscribermanage)
