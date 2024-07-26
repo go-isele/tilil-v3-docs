@@ -1,5 +1,5 @@
 ---
-title: Section 1 - Bulk SMS
+title:Bulk SMS API Guide
 ---
 
 - Tilil Technologies bulk SMS endpoint [https://api.tililtech.com/sms/v3/sendsms](https://api.tililtech.com/sms/v3/sendsms)
