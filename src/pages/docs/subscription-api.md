@@ -1,6 +1,5 @@
 ---
-
-## title: Subscription API
+title: Subscription API
 ---
 This service is invoked by a client to activate or deactivate a customer on a certain service.
 
