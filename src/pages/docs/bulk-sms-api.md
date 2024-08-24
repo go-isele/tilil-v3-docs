@@ -1,6 +1,3 @@
-You can add a section in your `.md` file to show how to make a request using Python by adding a new section after the "Sending a Message" section or before the "Success Request Response" section. Here’s how you could do it:
-
-```markdown
 ---
 title: Bulk SMS API
 ---
