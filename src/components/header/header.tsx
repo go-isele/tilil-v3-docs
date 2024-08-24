@@ -14,7 +14,7 @@ function Header() {
           <Burger />
           <Link href="/docs" className="flex flex-row items-center font-bold text-gray-600 dark:text-white" passHref>
             <span className="flex items-center">
-              <img src="/favicon.ico" alt="favicon" style={{ width: '25px', height: '25px', marginRight: '5px' }}/>
+              <img src="/favicon.ico" alt="favicon" style={{ width: '30px', height: '30px', marginRight: '5px' }}/>
               <b>Tilil Technologies</b>
             </span>
           </Link>
