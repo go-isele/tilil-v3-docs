@@ -41,34 +41,52 @@ Where:
 | `service_id`    | Int    | Description for service_id                         | `0`                                    |
 | `response_type` | String | Description for response_type                      | `json`                                 |
 
-### Making a Request Using Python
-
-To send a message using Python, you can use the `requests` library to make an HTTP POST request. Below is an example:
 
 ```python
+
 import requests
 
-url = "https://api.tililtech.com/sms/v3/sendsms"
+# Replace with your actual API key
+api_key = "YOUR_API_KEY"
 
-payload = {
-    "api_key": "{{ Test API Key}}",
+# Recipient phone number
+recipient_number = "0708400000"
+
+# Message content
+message = "This is a test message sent via Python script."
+
+# Base URL for the API endpoint
+base_url = "https://api.tililtech.com/sms/v3/sendsms"
+
+# Prepare the request data
+data = {
+    "api_key": api_key,
     "service": 0,
-    "mobile": "0708400000",
+    "mobile": recipient_number,
     "response_type": "json",
     "shortcode": "Tilil",
-    "message": "This is a message.\n\nRegards\nTilil"
+    "message": message
 }
 
-headers = {
-    "Content-Type": "application/json"
-}
+# Send the POST request
+response = requests.post(base_url, json=data)
 
-response = requests.post(url, json=payload, headers=headers)
+# Check for successful response
+if response.status_code == 200:
+    # Parse the JSON response
+    response_data = response.json()
+    
+    # Check for successful message sending
+    if response_data[0]["status_code"] == "1000":
+        print("Message sent successfully!")
+        print(f"Message ID: {response_data[0]['message_id']}")
+    else:
+        print(f"Error sending message: {response_data[0]['status_desc']}")
+else:
+    print(f"API request failed with status code: {response.status_code}")
 
-print(response.json())
 ```
 
-- This script sends a POST request to the Tilil Technologies Bulk SMS API endpoint with the required payload. The response from the API will be printed in JSON format.
 
 ### Success Request Response
 
@@ -134,4 +152,3 @@ print(response.json())
 | 1009        | Unsupported data type              |
 | 1010        | Unsupported request type           |
 | 1011        | Invalid user state                 |
-```
