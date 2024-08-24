@@ -1,3 +1,6 @@
+You can add a section in your `.md` file to show how to make a request using Python by adding a new section after the "Sending a Message" section or before the "Success Request Response" section. Here’s how you could do it:
+
+```markdown
 ---
 title: Bulk SMS API
 ---
@@ -40,6 +43,35 @@ Where:
 | `mobile`        | String | Description for mobile                             | `0708400000`                           |
 | `service_id`    | Int    | Description for service_id                         | `0`                                    |
 | `response_type` | String | Description for response_type                      | `json`                                 |
+
+### Making a Request Using Python
+
+To send a message using Python, you can use the `requests` library to make an HTTP POST request. Below is an example:
+
+```python
+import requests
+
+url = "https://api.tililtech.com/sms/v3/sendsms"
+
+payload = {
+    "api_key": "{{ Test API Key}}",
+    "service": 0,
+    "mobile": "0708400000",
+    "response_type": "json",
+    "shortcode": "Tilil",
+    "message": "This is a message.\n\nRegards\nTilil"
+}
+
+headers = {
+    "Content-Type": "application/json"
+}
+
+response = requests.post(url, json=payload, headers=headers)
+
+print(response.json())
+```
+
+This script sends a POST request to the Tilil Technologies Bulk SMS API endpoint with the required payload. The response from the API will be printed in JSON format.
 
 ### Success Request Response
 
@@ -105,3 +137,4 @@ Where:
 | 1009        | Unsupported data type              |
 | 1010        | Unsupported request type           |
 | 1011        | Invalid user state                 |
+```
