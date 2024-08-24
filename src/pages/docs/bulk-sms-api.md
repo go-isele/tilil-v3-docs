@@ -68,7 +68,7 @@ response = requests.post(url, json=payload, headers=headers)
 print(response.json())
 ```
 
-This script sends a POST request to the Tilil Technologies Bulk SMS API endpoint with the required payload. The response from the API will be printed in JSON format.
+- This script sends a POST request to the Tilil Technologies Bulk SMS API endpoint with the required payload. The response from the API will be printed in JSON format.
 
 ### Success Request Response
 
