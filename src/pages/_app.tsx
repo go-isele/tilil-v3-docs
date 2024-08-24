@@ -39,12 +39,15 @@ function MyApp(props: MyAppProps) {
         />
         <meta name="description" content={DESCRIPTION} />
 
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
+
         {/*<!-- Twitter Meta Tags -->*/}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content={SITE} />
         <meta name="twitter:title" content={TITLE} />
         <meta name="twitter:description" content={DESCRIPTION} />
-        <meta name="twitter:creator" content="@mverissimu" />
+        <meta name="twitter:creator" content="@Peter_Mulli" />
 
         {/*<!-- Facebook Meta Tags -->*/}
         <meta property="og:url" content={SITE} />
